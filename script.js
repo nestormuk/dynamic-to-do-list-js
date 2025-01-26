@@ -14,7 +14,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
         else{
             const newTask = document.createElement("li");
-            newTask.textContent = taskText;
+            newTask.textContent = taskInput.value;
+            
 
             const removeBtn = document.createElement("button");
             removeBtn.textContent ="Remove";
@@ -27,7 +28,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             newTask.appendChild(removeBtn);
             taskList.appendChild(newTask);
 
-            taskText.value = "";
+            taskInput.value = "";
         }
     }
 
