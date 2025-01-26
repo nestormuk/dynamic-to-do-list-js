@@ -6,15 +6,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
     function addTask(){
-       
+        const taskText = taskInput.value.trim();
 
-        if(taskInput.value.trim() === ""){
+        if(taskInput === ""){
             alert("Enter a task");
             return;
         }
         else{
             const newTask = document.createElement("li");
-            newTask.textContent = taskInput.value;
+            newTask.textContent = taskText
             
 
             const removeBtn = document.createElement("button");
